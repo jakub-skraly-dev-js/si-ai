@@ -15,7 +15,7 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Descarga el modelo de spaCy para español
-RUN python -m spacy download es_core_news_sm
+RUN python -m spacy download es_core_news_sm punkt averaged_perceptron_tagger
 
 # Comando por defecto (ajusta según tu entrypoint real)
 CMD ["python", "app.py"]
