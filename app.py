@@ -7,6 +7,10 @@ from bert_model import evaluar_respuesta_usuario  # Importa la función de evalu
 from flask import Flask, request, jsonify
 import pytesseract
 
+# Configuración de TensorFlow para producción
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suprime advertencias de TensorFlow
+os.environ['CUDA_VISIBLE_DEVICES'] = ''  # Fuerza uso de CPU en lugar de GPU
+
 from pdf_functions import (
     extract_text_from_pdf,
     extract_names,
@@ -19,6 +23,7 @@ from pdf_functions import (
 )
 import tensorflow as tf
 
+tf.config.set_visible_devices([], 'GPU')
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "https://si-front-black.vercel.app"}})  
@@ -118,4 +123,4 @@ def evaluar_examenes(respuestas_usuario, respuestas_modelo, pesos):
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 10000))
-    app.run(debug=True, host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=port)
