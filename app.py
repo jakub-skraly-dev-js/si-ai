@@ -1,3 +1,4 @@
+import os
 import base64
 from io import BytesIO
 from flask_cors import CORS
@@ -116,4 +117,5 @@ def evaluar_examenes(respuestas_usuario, respuestas_modelo, pesos):
     }
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    port = int(os.environ.get('PORT', 10000))
+    app.run(debug=True, host='0.0.0.0', port=port)
