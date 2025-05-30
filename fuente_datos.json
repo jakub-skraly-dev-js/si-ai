@@ -1,0 +1,116 @@
+    {
+        "intenciones": [
+        {
+            "tag": "Pregunta1",
+            "patterns": ["¿Qué es un sistema operativo?"],
+            "responses":["Un sistema operativo es un software que actúa como intermediario entre el hardware de una computadora y el usuario, gestionando los recursos del sistema y proporcionando una interfaz para que los usuarios interactúen con la máquina y ejecuten programas"]
+        },
+        {
+            "tag": "Pregunta2",
+            "patterns": ["¿Cuál es la diferencia entre un software de código abierto y un software propietario?"],
+            "responses":["El software de código abierto es aquel cuyo código fuente está disponible para que cualquiera lo pueda ver, modificar y distribuir libremente, mientras que el software propietario es aquel cuyo código fuente está protegido y su distribución y modificación están restringidas por el propietario."]
+        },
+        {
+            "tag": "Pregunta3",
+            "patterns": ["¿Qué es un algoritmo y cuál es su importancia en la programación?"],
+            "responses":["Un algoritmo es un conjunto de instrucciones bien definidas y ordenadas que describe un proceso o procedimiento para resolver un problema. En programación, los algoritmos son fundamentales ya que guían el desarrollo de software, determinando la lógica y la secuencia de operaciones necesarias para lograr un resultado deseado."]
+        },
+        {
+            "tag": "Pregunta4",
+            "patterns": ["¿Cuál es la diferencia entre la memoria RAM y la memoria ROM en unacomputadora?"],
+            "responses":["La memoria RAM (Memoria de Acceso Aleatorio) es una memoria volátil que se utiliza paraalmacenar temporalmente datos e instrucciones que el procesador necesita para realizar operaciones, mientras que la memoria ROM (Memoria de Solo Lectura) es una memoria no volátil que almacena datos permanentes y generalmente contiene el firmware del sistema."]
+        },
+        {
+            "tag": "Pregunta5",
+            "patterns": ["5. ¿Qué es un lenguaje de programación y cuál es su función en el desarrollo de software?"],
+            "responses":["Un lenguaje de programación es un conjunto de reglas y símbolos que se utilizan para escribir programas informáticos. Su función es permitir a los programadores comunicarse con las computadoras mediante la creación de instrucciones que el sistema puede entender y ejecutar."]
+        },
+        {
+            "tag": "Pregunta6",
+            "patterns": ["¿Qué es un compilador y cuál es su función en el proceso de programación?"],
+            "responses":["Un compilador es un programa informático que traduce el código fuente escrito en un lenguaje de programación a un código ejecutable entendido por la computadora. Su función es convertir el código fuente en un formato que la máquina pueda entender y ejecutar."]
+        },
+        {
+            "tag": "Pregunta7",
+            "patterns": ["¿Cuál es el propósito de la ingeniería de software y cuáles son sus principales fases?"],
+            "responses":["El propósito de la ingeniería de software es aplicar principios de ingeniería para desarrollar software de manera sistemática, eficiente y confiable. Sus principales fases son: análisis de requisitos, diseño, implementación, pruebas y mantenimiento."]
+        },
+        {
+            "tag": "Pregunta8",
+            "patterns": ["¿Qué es la programación orientada a objetos y cuáles son sus principales conceptos?"],
+            "responses":["La programación orientada a objetos es un paradigma de programación que se basa en el concepto de objetos, que son entidades que combinan datos (atributos) y funciones (métodos) relacionadas. Sus principales conceptos incluyen encapsulación, herencia y polimorfismo."]
+        },
+        {
+            "tag": "Pregunta9",
+            "patterns": ["¿Qué es un sistema de gestión de bases de datos y cuál es su importancia en el desarrollo de software?"],
+            "responses":["Un sistema de gestión de bases de datos (SGBD) es un software que permite a los usuarios almacenar, gestionar y recuperar datos de manera eficiente y segura. Es importante en el desarrollo de software porque proporciona una infraestructura para manejar grandes volúmenes de datos de manera estructurada y organizada."]
+        },
+        {
+            "tag": "Pregunta10",
+            "patterns": ["¿Cuáles son los principales tipos de redes informáticas y cómo se diferencian entre sí?"],
+            "responses":["Los principales tipos de redes informáticas son LAN (Red de Área Local), WAN (Red de Área Amplia) y MAN (Red de Área Metropolitana). Se diferencian en su alcance geográfico, donde LAN se limita a un área geográfica pequeña, WAN abarca áreas geográficas más grandes y MAN se sitúa entre ambos en términos de alcance."]
+        },
+        {
+            "tag": "pregunta11",
+            "patterns": ["¿Qué técnica se usa para mitigar riesgos en un proyecto de software?"],
+            "responses":["Gestión de riesgos"]
+        },
+        {
+            "tag": "pregunta12",
+            "patterns": ["¿Qué significa UML en ingeniería de software?"],
+            "responses":["Lenguaje Unificado de Modelado"]
+        },
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses":[""]
+        },
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses":[""]
+        },
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses":[""]
+        },
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses":[""]
+        },
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses":[""]
+        },
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses":[""]
+        },
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses":[""]
+        },
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses":[""]
+        },
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses":[""]
+        },
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses":[""]
+        }
+
+        ]
+    }
+    
