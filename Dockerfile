@@ -17,7 +17,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Descarga el modelo de spaCy para español
 RUN python -m spacy download es_core_news_sm
 
-RUN python -c "import nltk; nltk.download('punkt'); nltk.download('averaged_perceptron_tagger')"
+RUN python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab'); nltk.download('averaged_perceptron_tagger')"
 
 # Comando por defecto (ajusta según tu entrypoint real)
 CMD ["python", "app.py"]
