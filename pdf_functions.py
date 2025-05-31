@@ -122,6 +122,8 @@ def extract_answers_and_count(text):
     pattern = re.compile(r'\d+\.\s.?\?\s\(\d+\spuntos?\)\s*([\s\S]*?)(?=\d+\.\s|\Z)', re.DOTALL)
     matches = pattern.findall(text)
 
+    print(f"Procesando matches: {matches}")
+
     for match in matches:
         # Buscamos líneas que parezcan opciones o respuestas
         lines = match.strip().split('\n')
