@@ -14,11 +14,24 @@ COPY . /app
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Descarga el modelo de spaCy para español
+RUN python -m nltk.downloader punkt punkt_tab wordnet averaged_perceptron_tagger
+RUN python bert_model.py
 RUN python -m spacy download es_core_news_sm
 
-# Descarga recursos de NLTK usando el script
-RUN python download_nltk_data.py
+# # Descarga el modelo de spaCy para español
+# RUN python -m spacy download es_core_news_sm
+
+# # Descarga recursos de NLTK usando el script
+# RUN python download_nltk_data.py
 
 # Comando por defecto (ajusta según tu entrypoint real)
+# CMD ["python", "Entrenamiento.py"]
+# CMD ["python", "bert_model.py"]
+# CMD ["python", "pdf_functions.py"]
+# CMD ["python", "app.py"]
+
+# RUN python Entrenamiento.py
+# RUN python bert_model.py
+# RUN python pdf_functions.py
+
 CMD ["python", "app.py"]

@@ -1,4 +1,3 @@
-import os
 import base64
 from io import BytesIO
 from flask_cors import CORS
@@ -6,10 +5,6 @@ from chatbot import predict_class, get_response, intenciones  # Ajusta la import
 from bert_model import evaluar_respuesta_usuario  # Importa la función de evaluación
 from flask import Flask, request, jsonify
 import pytesseract
-
-# Configuración de TensorFlow para producción
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suprime advertencias de TensorFlow
-os.environ['CUDA_VISIBLE_DEVICES'] = ''  # Fuerza uso de CPU en lugar de GPU
 
 from pdf_functions import (
     extract_text_from_pdf,
@@ -23,7 +18,6 @@ from pdf_functions import (
 )
 import tensorflow as tf
 
-tf.config.set_visible_devices([], 'GPU')
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "https://si-front-black.vercel.app"}})  
@@ -122,5 +116,4 @@ def evaluar_examenes(respuestas_usuario, respuestas_modelo, pesos):
     }
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 10000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(debug=True, port=10000, host='0.0.0.0')
